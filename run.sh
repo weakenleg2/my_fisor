@@ -1,3 +1,20 @@
+#!/bin/bash
+#SBATCH --job-name=train_ssd
+#SBATCH --output=train_ssd.out
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --time=10:00:00
+#SBATCH --mem=8G
+#SBATCH --gres=gpu
+
+module load anaconda
+
+source ~/.bashrc
+
+conda init bash
+
+source ~/.bashrc
+conda activate safe
 export XLA_PYTHON_CLIENT_PREALLOCATE=False
 export CUDA_VISIBLE_DEVICES=0
 # export JAX_PLATFORM_NAME=cpu
