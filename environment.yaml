@@ -65,7 +65,6 @@ dependencies:
     - iniconfig==2.0.0
     - jax==0.4.9
     - jax-jumpy==1.0.0
-    - jaxlib==0.4.9+cuda12.cudnn89
     - kiwisolver==1.4.4
     - labmaze==1.0.6
     - llvmlite==0.41.1
